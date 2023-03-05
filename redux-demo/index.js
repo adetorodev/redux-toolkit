@@ -40,3 +40,8 @@ store.dispatch(orderCake());
 store.dispatch(orderCake());
 
 unsubscribe();
+
+
+//  nothing happens
+store.dispatch(orderCake());
+store.dispatch(orderCake());
