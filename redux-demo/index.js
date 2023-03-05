@@ -8,14 +8,14 @@ const CAKE_RESTORED = "CAKE_RESTORED";
 function orderCake() {
   return {
     type: CAKE_ORDERED,
-    quantity: 1,
+    payload: 1,
   };
 }
 
 function restoredCake(qty =1) {
     return {
       type: CAKE_RESTORED,
-      quantity: qty,
+      payload: qty,
     };
   }
 
@@ -35,7 +35,7 @@ const reducer = (state = initialState, action) => {
     case CAKE_RESTORED: 
       return {
         ...state,
-        numOfCake: state.numOfCake + action.quantity
+        numOfCake: state.numOfCake + action.payload
       };
     default:
       return state;
