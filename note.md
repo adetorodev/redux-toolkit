@@ -29,3 +29,12 @@ The principles
 
 3. To specify how the state tree is updated based on actions, you write pure reducers
 Reducer - (previousState, action) => newState
+
+Redux Store
+one store for the entire application
+Responsibilities:
+    hold application state
+    Allows access to state via getState()\
+    allow state to be updated via dispatch(action)
+    Registers listeners via subscribe(listener)
+    Handles unregistering of listeners via function return by subscribe(listener)
